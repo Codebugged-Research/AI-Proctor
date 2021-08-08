@@ -1,0 +1,190 @@
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.server-connection-select{
+    margin-top:30px;
+    margin-left : 10px;
+    margin-right: 10px;
+}
+
+
+.content-container {
+    padding: 20px 40px 10px 40px;
+    height: 100%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 100%;
+}
+
+.column {
+    width: 100%;
+    margin: 10px;
+    text-align: center;
+    align-content: center;
+}
+
+.column:first-child {
+    border-right: 1px solid lightgray;
+}
+
+header {
+    padding-left: 20px;
+    border-bottom: 1px solid lightgray;
+}
+
+.emulator {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.user-add {
+    display: flex;
+    justify-content: center;
+}
+
+#user-demo-image {
+    margin-top:10px;
+    margin-left: 20px
+}
+
+.camera-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+
+}
+.camera {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 300px
+}
+
+.device-status {
+    display: flex;
+    justify-content: center;
+}
+
+.camera-status {
+    margin: 5px;
+}
+
+.status-ok::after{
+    content: '\2714';
+    color: forestgreen;
+}
+
+.status-not-ok::after{
+    content: '\2715';
+    color: red;
+}
+
+.mic-status {
+    margin: 5px;
+}
+
+.error {
+    color: red;
+    margin: 5px;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+#video {
+    border: 1px solid lightgray;
+    box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+}
+
+#photo {
+    border: 1px solid lightgray;
+    box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+    width: 320px;
+    height: 240px;
+}
+
+
+.alerts-container{
+    border: 1px solid lightgray;
+    margin-left: auto;
+    margin-right: 20px;
+    width: 70%;
+    height: 80vh;
+    overflow-y: scroll;
+}
+
+.alert-header {
+    padding:15px;
+    background: aliceblue;
+    font-weight: 500;
+    font-size: 1.2rem;
+    border-bottom: 1px solid lightgray;
+}
+
+.alert-body {
+    padding: 5px;
+}
+
+.alert{
+    text-align: left;
+}
+
+#user_section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.output {
+    flex: 1;
+    max-width: 340px;
+}
+
+.btn-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+button {
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid lightgray;
+    margin: 10px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-decoration: none;
+    background: dodgerblue;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #FFFFFF;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+button:hover:enabled {
+    transform: scale(1.1);
+    box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+}
+
+button:disabled {
+    opacity: 0.5;
+    color:lightgray;
+}
+
+

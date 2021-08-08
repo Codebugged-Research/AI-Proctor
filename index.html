@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Briso - AI SDK with Server</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body onload="startTime()">
+    <header>
+        <h1 class="heading">
+            Briso AI JS Demo With Server - ExamsOnline
+        </h1>
+        <h1 id="clock"></h1>
+    </header>
+
+    <div class="content-container">
+        <div class="row">
+            <div class="column emulator">
+                <div class="user-add">
+                    <button id="initialize">Initialize System</button>
+                    <button id="start-monitoring" disabled="disabled">Emulate Start Monitoring</button>
+                </div>
+                <hr width="90%" />
+                <div class="camera-container">
+                    <div class="error" id="video-error" style="visibility:hidden"></div>
+                    <div id="player">
+                        <video id="video1" height="auto" width="100%" autoplay></video>
+                    </div>
+                    <div class="device-status">
+                        <div class="camera-status">
+                            <span id="camera-status"></span> Camera Access
+                        </div>
+                        <div class="mic-status">
+                            <span id="mic-status"></span> Mic Access
+                        </div>
+                    </div>
+                    <button id="camera-control" class="camera-control" data-target="video1" disabled="disabled">
+                        Start Camera
+                    </button>
+                </div>
+                <hr width="90%" />
+                <div class="btn-group">
+                    <div>
+                        <button id="pause-monitoring" disabled="disabled">
+                            Emulate Pause Monitoring
+                        </button>
+                    </div>
+                    <div>
+                        <button id="resume-monitoring" disabled="disabled">
+                            Emulate Resume Monitoring
+                        </button>
+                    </div>
+                </div>
+                <hr width="90%" />
+                <div>
+                    <button id="end-monitoring" disabled="disabled">
+                        Emulate End Monitoring
+                    </button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="alerts-container">
+                    <div class="alert-header">
+                        Alerts
+                    </div>
+                    <div class="alert-body" id="briso-alerts">
+                        <ul></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.slim.js"></script>
+
+    <script src="js/briso/briso.js"></script>
+    <script src="js/demo.js"></script>
+</body>
+
+</html>
